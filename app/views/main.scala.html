@@ -26,7 +26,7 @@
 
     <body>
 
-        <nav class="navbar navbar-default" style="margin-bottom: 0; background-color: #3399CC; border-radius: 0; border: 0;" role="navigation">
+        <nav class="navbar navbar-default" style="margin-bottom: 20px; background-color: #3399CC; border-radius: 0; border: 0;" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-left">
                     <a class="navbar-brand" href="@routes.Application.index()" style="padding: 7px; color: white;">
@@ -57,6 +57,7 @@
                     </ul>
                     } {
                         <a href="@routes.Application.login()" class=" navbar-right btn btn-default navbar-btn @("disabled".when(nav == "login"))">@Messages("playauthenticate.navigation.login")</a>
+                        <a href="@routes.Application.signup()" style="margin-right: 10px" class=" navbar-right btn btn-default navbar-btn @("disabled".when(nav == "singup"))">@Messages("playauthenticate.navigation.signup")</a>
                     }
                 </div>
             </div>
