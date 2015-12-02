@@ -94,3 +94,10 @@ width:40%;
 .login:hover {
 	background-color: #28b363;
 }
+
+#horizontal-list li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 7px;
+}

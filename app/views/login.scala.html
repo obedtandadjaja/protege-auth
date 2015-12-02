@@ -12,9 +12,9 @@
         <div class="panel panel-default">
           <div class="panel-heading">Login</div>
           <div class="panel-body">
-            <div class="col-md-6">
+            <div class="col-md-12">
               @* Display proprietary login form *@
-              @helper.form(routes.Application.doLogin, 'class -> "form-horizontal col-md-offset-3 col-md-9", 'role -> "form") {
+              @helper.form(routes.Application.doLogin, 'class -> "form-horizontal col-md-12", 'role -> "form") {
 
               @if(loginForm.hasGlobalErrors) {
                 <p class="alert alert-danger">
@@ -30,7 +30,7 @@
                 '_label -> Messages("playauthenticate.login.password.placeholder")
               )
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12" style="margin-bottom: 20px">
               @Messages("playauthenticate.login.oauth")
               @* Display list of available providers *@
               @_providerPartial(skipCurrent=false)

@@ -10,7 +10,7 @@ function askOpenID(url) {
 	}
 }
 </script>
-<ul class="providers">
+<ul class="providers" id="horizontal-list">
 	@forProviders(skipCurrent) { p =>
 		<li>
 		@if(p.getKey() == "openid") {
